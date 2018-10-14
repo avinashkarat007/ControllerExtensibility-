@@ -7,13 +7,13 @@ using ControllerExtensibility.Models;
 
 namespace ControllerExtensibility.Controllers
 {
-    public class ProductController : Controller
+    public class CustomerController : Controller
     {
         public ViewResult Index()
         {
             return View("Result", new Result
             {
-                ControllerName = "Product",
+                ControllerName = "Customer",
                 ActionName = "Index"
             });
         }
@@ -22,7 +22,7 @@ namespace ControllerExtensibility.Controllers
         {
             return View("Result", new Result
             {
-                ControllerName = "Product",
+                ControllerName = "Customer",
                 ActionName = "List"
             });
         }
